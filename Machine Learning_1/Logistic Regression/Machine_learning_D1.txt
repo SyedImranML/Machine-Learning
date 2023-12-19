@@ -1,0 +1,455 @@
+What is Machine Learning:
+
+A system which learns patterns from the past data and
+predicts the future with certain probability.
+
+or 
+we can also say that
+Machine learning helps us in understanding relationship between diff. variables.
+
+Questions:
+We'll run a ML Model:
+1) Will we be telling the algorithum to find patterns.
+2) It does on its own.
+
+Machine learning you find 
+1. Sales Forecasting
+2. Buy /Not Buy
+3. Targeted Ads.
+
+Swiggy / Zomato -> Natural Language Processing uses chatbot
+Speed camera  Deep learning algorithum also
+Product recommandation
+
+Two Types of Machine Learning :
+1. Supervised ML Models
+2. Unsupervised ML Models.
+
+Supervised Machine Learning :
+
+The Entity that we are trying to predict is available / Known to us.
+Entity (Y Variable or Target Variable)
+
+It is also known as labeled Data.
+
+There are two kind of algorithum in machine learning model that are under supervised machine learning model.
+
+1. Regression : Y varibale / Target variable is continous in nature
+
+What is continous data :
+contionus data that can take any value between [-inf,+inf]
+or every possible data point.
+example : height,weight
+Example for Regression use case is Demand prediction , Predicting price , Cars, Predicting stocks, Sales , Revenue,
+Average Prediction ,Average of your Car ,millage prediction etc.
+
+First Alogirthum and important is linear regression ,
+Decision Tree Regression , Random forest regression.
+etc.
+
+Classification : Y variable is a discreate class which can take values in classes
+Ex: True / False , Yes /No , M/F , Buy/Not , click/ not , loan/Not loan
+default/not default etc.
+
+Algorithum
+logistic Regression,decision tree classifer, RF classifer.
+
+
+2. Classification
+
+UnSupervised Machine Learning :
+
+The Entity that we are trying to predict is not known to us.
+
+It is also known as unlabeled Data.
+
+lets a person ABC 
+ABC -> HI,HS
+XYZ -> LI,LS
+123 -> HI,LS
+789 -> LI,HS
+mike -> AI,AS
+
+how many people here 5
+
+we are comparing attributes, grouping similar attributes together!
+
+"Attention is all you need"
+sleep cycle -> youtube
+they earn money because you are giving attention to them
+
+
+eyeball they get
+
+-> group together data based on their attributes!
+-> customer segmentation!
+-> how they know that we can not effort for that because of data.
+your pin code differ offer -> swiggy / zomato is different becuase they tailor our behaviour.
+ they record your preference -> that why you get similar orders as an offers
+
+when you use a product for free then you are the product because they collect your data and sell them.
+
+
+Amazon CEO previous -> former sahrelin
+
+She said if you don't want us to collect data you will have to pay to use facebook and any social media.
+because they earn money from your data.
+
+- chatting about hoilday vaccation
+- how does uber and ola knows were is the demand from...
+clusters
+
+Step0 : understand the problem statement,
+step1  : Data sourcing (python,excel,excel)
+step2  : Load the libraries and the dataset
+            Pandas,Numpy,Matplotlib,Seaborn,Warnings,OS
+step3  : Inspect the Data.. like head() ,tail(),.shape,.describe (to know how your             data looks like)
+step4   : Data Cleaning 
+              2 steps in Data Cleaning
+              1) Missing Value Treatment
+                 a. Numerical Missing
+                 b. Categorical Missing
+                2) Outlier Imputations (Boxplot/IQR)
+Step5:    EDA (Exploratory Data Analysis)
+              1) Uni : 1 Variable
+              2) Bi    : 2 Variables
+              3) Multi : 2+ Varibles
+              Charts : Bar, Stacked Bar,Scatter, Box, Hist, Bubble, Violin charts ,etc.
+
+Next Steps 
+Step6 :      Var. Transformation & Feature Engineering
+                 New Features ? Scaling -if required
+
+date -> Day/Month/Year/Week/Quater/Is_leap/Is_weekday/is_holiday -> feature              Eng.
+
+Step7 : Divide our data into two parts:
+            1. Training
+            2. Testing
+
+Step8 : Model Building -> Supervised / Unsupervised Machine Learning Model
+           1) Run Model
+           2) Test the Model
+           3) Evaluate the Model
+
+Step9 : Tuning the parameters
+Step10: Validation
+Step11: Deployment
+
+here we need to use the library all code will be in library
+
+libraries : statmods /scipy/math/scikitlearn
+
+
+
+Bagging V/s bosting -> Supervise machine learning model
+
+Machine Learning !!! -> Predictive Modelling!!
+Statistical Modelling(Not)
+
+
+if i have data will a person
+Click /Not click Adv  -> how can i predict it well
+which alogo ,which evaluation matric ? i will use.
+
+suppose :
+Linear Regression :
+how many lines of code is reuired for linear regression
+
+hardly 2 - 3lines of code
+
+example : 
+lr = LinearRegression()
+lr.fit(X-train,Y_Train) -> 70% of the data (algo will learn pattern)
+lr.predict(X_test) ->(30%) ->  gives you Y_pred values as an output
+
+Acutal_Y
+Y_Act - Y_Pred = Errors!
+
+
+In machine learning two types of models 
+1. Supervised - Target variable is present
+      a. Regression - Target var is continous 
+           Algo.          Linear Regression etc.
+      b. Classification - Target var is a discreat class
+          Algo.      Logistic Regression etc.
+
+Linear Regression :
+
+Supervised ML Regressor algorithum helps in predicting contionus target values!
+2 types of Linear Regression
+1)Simple L.R. ->
+In case of simple linear regression your equation will be y = mx + c
+
+2)Multiple Linear Regession :
+In case of multiple linear regression your equation will be
+Y =m1x1 + m2x2 + .......+mnxn+c
+
+Lets understand with an example:
+I want to calculate my average of car 
+
+Simple L.R.
+
+Avg(Y) = m*(speed) +c  (Average of the car is depended on speed of the car)
+
+Multiple L.R.
+
+Avg(Y) = m*(speed) +m2*cartype+m3*enginetype+m4*gearshift+m5*carwt+m6*psngwt+c
+
+Multiple learn regession consider nore factor that may impact your average of the car.
+
+some of them might be significant and might not significant.
+
+Avg(Y) = m*(speed) +m2*cartype+m3*enginetype+m4*gearshift+m5*carwt+m6*psngwt+m7*color_my_car+c
+
+roadconditions also matters as  well
+
+
+Y  -> Target var / Dependent var.
+X -> Predictor / Independent var. / Features
+M -> coefficent /slope
+C -> Constant / Intercept
+
+Data  -> excle or csv etc.
+
+
+Simple  L.R ->
+Avg(y) = m*speed(x)+c
+
+CSv file will have 2 columns 1Y and 1X
+
+Actual value of Y is known to us (T/F) T
+Actual value of X is known to us (T/F) T
+
+if i know the actual value of x and if i know the actual value of y what am i try to predict.
+Ans. Y predicted 
+
+learn the pattern from x and y and predict y on new value of x!
+Y predicted value can be predicted if we know the value of m and c (mx+c)
+
+Linear regression gives the best value of m and c!
+
+YAct is very close to Y predicted value what it means 
+very good module and accurate is very good
+i.e means Error is low!
+
+I ran 2 models 
+
+Model 1 - Act : 10 , Pred - 8.8 -> Error is less
+Model 2 - Act : 10, pred -6.1 -> Error is more
+
+Linear Regression :
+Tries to find best fit line i.e m and c which minimizes the error!
+
+How to find the best fit line ?
+the algorithum will give you the best fit line.
+
+the distance between your acutal point andyour line are errors.
+Y Act - Y Predict = error
+
+Assumptions of Linear Regression:
+Linear means st. line
+1) X and Y should have a linear relationship
+2) Minimizes multicollinearity
+       a. what is correlation?
+           .corr() -> [-1,+1] [ high neg corr , high postive corr]
+        b. Variance inflation factor (VIF) :
+              tells us the biggest "X" influencer in the data,  [threshould : 5]
+           example :
+                 Avg(y) = speed(x1) + road_cond(x2)+c
+
+Goal is find relationship between y and x
+
+VIF eg:  x1 x2 x3 to resolve multicollinarity ans:b
+              11 9 6
+      a) remove all vals > 5
+      b) remove x1
+      c) remove x2
+      d) remove x1 and x2       
+* Remove higest influencer and reclaculate the value of V.I.F.
+
+3) Error Terms : (Yact -YPred):
+    a. Normally distributed
+    b. constant variance (homoscedasticity
+    c.  No Autocorreclation(Error terms independent of each other)
+
+How will i know which is the best perorming model?
+Evaluation metrics for regression:
+1) R Square:
+    how much variance in "Y" is being explained by the "X" variables.
+    rsq.- 0 to 1 higher,better
+    0.82 -> 82% of the variance in "AVG" is being explained by the     "independent/X" variables.
+
+Avg(Y) = speed(x) +c -> rsq= 0.82
+Avg(Y) = speed(x) +color_of_car(x2)+c 
+here x2 is insignificant!
+in this case rsq either increase/stays same -> it'll never decrease -> Disadvantage
+
+2) Adjusted R.Square :
+    Penalizesthe non-significant "x" variables!
+
+How  do we know if "x" variable is significant / insignificant ?
+from P value < 0.05 -> significant
+        P value > 0.05 -> insignificant  ##########  Stats comes in pic
+
+3) Mean Abs. Error (M.A.E)
+     sum(abs(YAct - YPred))/n
+
+obs.1 -> YAct =10 ,YPred =8 -> Error :2
+obs.2 -> YAct =10 ,YPred =14 -> Error :-4
+
+M.A.E=(2-(-4))/2=6/2=3
+
+
+4)Mean Sqd.Error(M.S.E)
+Sum((Yact-YPred)sq)/n
+
+5)root Mean Sqd. Error(R.M.S.E)
+  Sqrt(MSE)
+
+6) M.A.P.E - Mean Abs.% Error.
+
+we use  all this evaluation matrix  for  regression algorithum
+like decision tree,Random forest,XGboost,adaboost,KNN,SVM etc...
+
+
+ Logistic Regression , Condusion Matrix
+----------------------------------------------------
+Classification -> is it Supervised / Unsupervised Machine Learning 
+1) In supervised 
+ a. Regression  b. Classification
+
+Classificaton -> Supervised Machine Learning Algo which classifies between a discreat class.
+
+
+2)Unsupervised Machine Learning
+
+DecisionTreeRegressor   RandomForestRegressor
+DecisionTreeClassifier     RandomForestClassifier
+  
+but we have 
+Linear Regression -> Regression
+Logistic Regression -> classification
+
+
+because of the similarity between the linear regression
+In case of Linear Regression we fit a straight fit line
+bit in case of logistic regression i can't fit a straight fit line why ?
+because your output is either 0 or 1 
+if i fit a st. line in this my error will be vary high 
+instead of fiting a st. line we fit a sigmoid curve.
+this is also known as sigmoid curve also
+the threshould of this sigmoid curve is 0.5
+so we calculate a probability of an event happening if it is greater than or equal to  0.5 it is marked as '1' and if it is less than 0.5 it is marked as '0'.
+
+the default cut off of this sigmoid curve is 0.5
+>= 0.5 the output becomes 1 class
+< 0.5 the output becomes 0 class
+
+linear regression equation : Y + mx+c
+Logiestic Regression   equation :  Y = 1 / 1+ e^(mx+c) or 
+                                                         Ln(p/1-p) = mx+c  -> is called as logit 
+some times logistic regression is also called as logit regression
+p/1-p  -> ODDs
+
+diff between prob vs odds
+Prob = Event /Total_sample -> Dice  -> p(6)=1/6
+
+Odds = Event / non Event -> 1/5
+this is also called as sister algorithum because they are very similar to each other.
+
+Question :
+Sigmoid curve threshold is 0.5
+can we change this threshold value or not
+(YEs)
+1) Person will click on ad/ not
+2)Person has diabetes or not 
+
+in which case you will take a higher probabity ?
+ 
+.predict 
+.predict.proba
+
+In linear Regression -> 1 YAct , 1 YPred -> negated -> Error
+In Logiestic Regression -> 
+2 Y Actuals -> 0 / 1
+2 Y  Predicted -> 0 / 1
+how many combination will it form
+11 ,00, 01, 10
+
+before we calculate evaluation matrix for classifier algorithum we first calculate a 
+matrix called as "confusion matrix"
+
+A confusion matrix have 4 parts 
+1) True Positive 
+2) True Negative
+3) False Positive
+4) False Negative
+
+1) True Positive : Predict postive , correct(11)
+2) True Negative : Predict negative , correct(00)
+3) False Positive : Predict Positive , in correct(10)
+4) False Negative :Predict negative , incorrect(01)
+
+The way to read this is 
+
+------------------------------------------------------------
+n=165     |    Predicted : NO     |   Predicted : YES
+--------------------------------------------------------------
+Actual :   |  
+NO         |      50                      |              10
+----------------------------------------------------------------
+Actual :   |      5                        |              100
+Yes         |                                |           
+------------------------------------------------------------------
+
+Yes means buy 
+No means not buy
+
+Question :
+TP, TN, FP, FN
+100,50 , 10,5
+
+1000 rows  -> 990 (not click) , 10(click)
+Click    -> 1%
+No click -> 99%
+
+TN,FP / FN, TP  
+
+Evaluation Metric
+1) Accuracy : (TP + TN) / (TP+FP+TN+FN)
+
+Accuracy is not a good matrix if you have class imbalance:
+Class Imbalance
+Eample :
+Class 1 -> 1%
+Class 0 -> 99%
+
+then we use Precision and Recall
+
+2) Precision : (TP) / (TP +FP) end with 'P' 
+Out of the total predicted YES how many was actually correct.
+
+3) Reecall : (TP) / (TP + FN)
+which means out of the actual  YES how many were predictly correct.
+
+when to use this 
+1) you will use Precision when the cost of FP is very high 
+2) you will use Recall  when the cost of FN is very high.
+
+
+Example : A Covid Lab
+ Precision / Recall
+
+
+4) F1 score : (2 *P*R) / (P+R)
+
+
+
+
+
+
+
+
+
+
+
